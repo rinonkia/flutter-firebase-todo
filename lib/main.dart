@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 // Import the firebase_core plugin
 import 'package:firebase_core/firebase_core.dart';
+import 'package:learn_ddd/add_user.dart';
+import 'package:learn_ddd/get_user_name.dart';
 
 void main() {
   // https://stackoverflow.com/questions/57689492/flutter-unhandled-exception-servicesbinding-defaultbinarymessenger-was-accesse
@@ -138,6 +140,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            AddUser('Akinori', 'Diverse', 32),
+            GetUserName('uGCwAm5nUaGIIxmEKmxF')
           ],
         ),
       ),
